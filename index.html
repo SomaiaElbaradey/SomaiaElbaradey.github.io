@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Rubik:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/095f8c7a13.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Second Trial</title>
+  </head>
+
+  <body class="container">
+    <!-- Preloader starts -->
+    <div class="preloader__background">
+      <object data="img/preloader.svg" class="preloader__icon"></object>
+    </div>
+    <!-- Preloader ends -->
+
+    <!-- Day or Night? starts -->
+    <div class="dorn" id="darkmodeToggle">
+      <i class="fas fa-adjust dorn__icon"></i>
+      <h4 class="heading-4">Day or Night?</h4>
+    </div>
+    <!-- Day or Night? ends -->
+
+    <!-- Mood starts -->
+    <div class="mood">
+      <i class="far fa-laugh-beam mood__icon"></i>
+      <div class="mood__container">
+        <h4 class="heading-4">Your mood?</h4>
+        <div class="mood__moods">
+          <div class="mood__mood mood__mood--1" id="greenButton"></div>
+          <div class="mood__mood mood__mood--2" id="pinkButton"></div>
+          <div class="mood__mood mood__mood--3" id="blueButton"></div>
+          <div class="mood__mood mood__mood--4" id="orangeButton"></div>
+          <div class="mood__mood mood__mood--5" id="yellowButton"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Mood ends -->
+
+    <!-- Navigation button start -->
+
+    <div class="nav">
+      <input type="checkbox" class="nav__checkbox" id="checkbox" />
+      <label for="checkbox" class="nav__button"> <span></span> </label>
+    </div>
+    <!-- Navigation button start -->
+
+    <!-- sidebar starts -->
+    <div class="sidebar">
+      <!-- logo starts -->
+      <h1 class="logo logo--centered">
+        <span> Somaia Elbaradey </span>
+      </h1>
+      <!--  logo ends -->
+
+      <!-- Sidebar nav starts -->
+      <nav class="sidebar__nav">
+        <ul class="sidebar__list">
+          <li class="sidebar__item">
+            <a href="#home" class="sidebar__link">
+              <svg class="sidebar__icon">
+                <use xlink:href="img/sprite.svg#icon-home"></use>
+              </svg>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#info" class="sidebar__link">
+              <svg class="sidebar__icon">
+                <use xlink:href="img/sprite.svg#icon-user"></use>
+              </svg>
+              <span>Who I am</span>
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#projects" class="sidebar__link">
+              <svg class="sidebar__icon">
+                <use xlink:href="img/sprite.svg#icon-cubes"></use>
+              </svg>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#contact" class="sidebar__link">
+              <svg class="sidebar__icon">
+                <use xlink:href="img/sprite.svg#icon-comments"></use>
+              </svg>
+              <span>Get in touch</span>
+            </a>
+          </li>
+           <li class="sidebar__item hidden-item">
+            <!-- <a href="#deeds" class="sidebar__link">
+              <svg class="sidebar__icon">
+                <use xlink:href="img/sprite.svg#icon-list"></use>
+              </svg>
+              <span>What I do</span>
+            </a> -->
+          </li> 
+        </ul>
+      </nav>
+      <!-- Sidebar nav ends -->
+
+      <!-- copyrights starts -->
+      <p class="copyrights">&copy; 2021 by Somaia Elbaradey.</p>
+      <!-- copyrights ends -->
+    </div>
+    <!-- sidebar ends -->
+
+    <!-- main content start -->
+    <main class="main-container">
+      <!-- Home section starts -->
+      <section class="home active" id="home">
+        <div class="home-container">
+          <img
+            src="img/Somaia.png"
+            alt="Photo of Somaia Elbaradey"
+            class="home__img"
+          />
+          <h2 class="heading-2">Somaia Mostafa Elbaradey</h2>
+          <p class="home__description u-mb-sm">
+            I'm
+            <span
+              class="typing"
+              date-wait="3000"
+              data-words='["a Software Developer", "a Web Developer",
+              "a JavaScript Developer","a Microsoft Web Solution Developer", "Microsoft Desktop Solution Developer",
+              "a Business Intelligence Specialist"]'
+            >
+            </span>
+          </p>
+          <div class="home__social-links">
+            <a
+              class="home__social-link"
+              href="https://github.com/SomaiaElbaradey"
+            >
+              <i class="home__icon fab fa-github"></i>
+              <!-- <svg class="home__icon">
+                <use xlink:href="img/sprite.svg#icon-github"></use>
+              </svg> -->
+            </a>
+            <a
+              class="home__social-link"
+              href="https://www.linkedin.com/in/SomaiaElbaradey/"
+            >
+              <i class="home__icon fab fa-linkedin-in"></i>
+            </a>
+            <a
+            class="home__social-link"
+            href="https://www.facebook.com/somaiaelbaradey/"
+          >
+          <i class="home__icon fab fa-facebook-f"></i>
+          </a>
+          </div>
+          <div class="home__social-links">
+          </div>
+        </div>
+      </section>
+      <!-- Home section ends -->
+
+      <!-- Section who I am starts -->
+      <section class="info" id="info">
+        <!-- Header of the Info section starts -->
+        <header class="info__header u-mb-lg">
+          <h3 class="heading-3 u-mb-lg">Who I am</h3>
+          <h4 class="heading-4 u-mb-sm">
+            I’m Somaia Mostafa Elbaradey and a
+            <span>Software Developer </span>.
+          </h4>
+          <p class="info__text">
+            I am very passionate about Web Development. I like to work with
+            JavaScript frameworks, C t
+          </p>
+        </header>
+        <!-- Header of the Info section ends -->
+
+        <!-- Details of the info section starts -->
+
+        <div class="info__details">
+          <ul class="info__list">
+            <li class="info__item"><span>Age:</span> 23</li>
+            <li class="info__item">
+              <span>Email:</span> somayaelbaradey@gmail.com
+            </li>
+            <li class="info__item"><span>Degree:</span> B.Sc.</li>
+            <li class="info__item"><span>Phone:</span>+20 10 936 643 03</li>
+            <li class="info__item"><span>Nationality:</span> Egyptian</li>
+            <li class="info__item"><span>Residence:</span> Cairo, Egypt</li>
+          </ul>
+
+          <form action="#" class="info__form">
+            <a href="#" class="btn"> Download my resume </a>
+            <a class="btn" href="#contact"> Let's work together </a>
+          </form>
+
+          <div class="info__skills-box">
+            <div class="info__skill-box">
+              <div class="info__skill-title u-mb-sm">
+                <h5 class="heading-5">Python</h5>
+                <p class="info__skill-percentage">90%</p>
+              </div>
+              <div class="info__skill-bar info__skill-bar--1">&nbsp;</div>
+            </div>
+            <div class="info__skill-box">
+              <div class="info__skill-title u-mb-sm">
+                <h5 class="heading-5">SQL</h5>
+                <p class="info__skill-percentage">80%</p>
+              </div>
+              <div class="info__skill-bar info__skill-bar--2">&nbsp;</div>
+            </div>
+            <div class="info__skill-box">
+              <div class="info__skill-title u-mb-sm">
+                <h5 class="heading-5">TensorFlow</h5>
+                <p class="info__skill-percentage">70%</p>
+              </div>
+              <div class="info__skill-bar info__skill-bar--3">&nbsp;</div>
+            </div>
+            <div class="info__skill-box">
+              <div class="info__skill-title u-mb-sm">
+                <h5 class="heading-5">Django</h5>
+                <p class="info__skill-percentage">70%</p>
+              </div>
+              <div class="info__skill-bar info__skill-bar--4">&nbsp;</div>
+            </div>
+            <div class="info__skill-box">
+              <div class="info__skill-title u-mb-sm">
+                <h5 class="heading-5">Apache Hadoop & Spark Ecosystems</h5>
+                <p class="info__skill-percentage">60%</p>
+              </div>
+              <div class="info__skill-bar info__skill-bar--5">&nbsp;</div>
+            </div>
+            <div class="info__skill-box">
+              <div class="info__skill-title u-mb-sm">
+                <h5 class="heading-5">Amazon Web Services</h5>
+                <p class="info__skill-percentage">60%</p>
+              </div>
+              <div class="info__skill-bar info__skill-bar--6">&nbsp;</div>
+            </div>
+            <div class="info__skill-box">
+              <div class="info__skill-title u-mb-sm">
+                <h5 class="heading-5">Google cloud platform</h5>
+                <p class="info__skill-percentage">50%</p>
+              </div>
+              <div class="info__skill-bar info__skill-bar--7">&nbsp;</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Details of the info section ends -->
+
+        <!-- History of the info section starts -->
+
+        <!-- History box 1 -->
+        <div class="info-box">
+          <h4 class="heading-4 u-mt-md u-mb-sm">Personal Achievments</h4>
+          <div class="info-box__details info-box__details--1">
+            <div class="info-box__box info-box__box--1">
+              <p class="info-box__text">
+                I do not consider myself achieving much. Part of my recent
+                achievements was that I gave a talk entitled “Software
+                Engineering and Entrepreneurship” at
+                <a
+                  href="https://www.facebook.com/permalink.php?story_fbid=386319269487866&id=108585903927872"
+                  class="info-box__link"
+                  >TEDxYouth @Obour STEM.
+                </a>
+              </p>
+            </div>
+            <img
+              src="img/achievment.jpg"
+              alt="Photo of Somaia's ted talk"
+              class="info-box__img"
+            />
+          </div>
+        </div>
+
+        <!-- Info grid starts  -->
+
+        <div class="info__grid">
+          <!-- History box 2 -->
+
+          <div class="info-box">
+            <h4 class="heading-4 u-mt-md u-mb-sm">Education</h4>
+            <div class="info-box__details">
+              <div class="info-box__box">
+                <header class="info-box__header">
+                  <div class="info-box__duration u-mb-sm">
+                    <svg class="info-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                    </svg>
+                    <span> Sept 2017 - Jun 2021 </span>
+                  </div>
+                  <h5 class="heading-5">B.Sc. in Biomedical Sciences</h5>
+                  <h5 class="heading-5 u-mb-sm">
+                    University of Science and Technology in
+                    <a
+                      href="https://www.zewailcity.edu.eg/main/content.php?lang=en&alias=biomedical_sciences"
+                      class="info-box__link"
+                      >Zewail City</a
+                    >.
+                  </h5>
+                </header>
+                <p class="info-box__text">
+                  My concentration of study is Computational Biology and
+                  Genomics. We get a strong background in Biology and study
+                  Bioinformatics algorithmic foundations in addition to
+                  Mathematical Modeling of Biological Systems. I take my
+                  elective courses with<a
+                    href="
+                                https://www.zewailcity.edu.eg/main/content.php?lang=en&alias=communications_and_information_engineering"
+                    class="info-box__link"
+                  >
+                    the Communications and Information Engineering Program
+                  </a>
+                  on Big Data Analytics and Deep Learning techniques. I have
+                  also been through a solid foundation in Entrepreneurship &
+                  Small Business Management, Economics and Project Management
+                  from my General Education courses.
+                </p>
+              </div>
+              <div class="info-box__box">
+                <header class="info-box__header">
+                  <div class="info-box__duration u-mb-sm">
+                    <svg class="info-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                    </svg>
+                    <span> Sept 2020 - Feb 2021 </span>
+                  </div>
+                  <h5 class="heading-5">Deep Learning Specialization</h5>
+                  <h5 class="heading-5 u-mb-sm">
+                    <a
+                      href="https://www.deeplearning.ai/"
+                      class="info-box__link"
+                    >
+                      DeepLearning.AI</a
+                    >
+                    on
+                    <a href="https://www.coursera.org/" class="info-box__link"
+                      >Coursera.org</a
+                    >
+                  </h5>
+                </header>
+                <p class="info-box__text">
+                  It is a five-course specialization giving the foundations of
+                  Deep Learning, and how to build neural networks. We learn
+                  about Convolutional networks, RNNs, LSTM, Adam, Dropout,
+                  BatchNorm, Xavier/He initialization, and more. The
+                  specialization is based on case studies from healthcare,
+                  autonomous driving, sign language reading, music generation,
+                  and natural language processing.
+                </p>
+              </div>
+              <div class="info-box__box">
+                <header class="info-box__header">
+                  <div class="info-box__duration u-mb-sm">
+                    <svg class="info-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                    </svg>
+                    <span> Dec 2020 - Mar 2021 </span>
+                  </div>
+                  <h5 class="heading-5">
+                    Data Analysis Professional Nanodegree
+                  </h5>
+                  <h5 class="heading-5 u-mb-sm">
+                    <a href="https://www.udacity.com/" class="info-box__link"
+                      >Udacity.com</a
+                    >
+                    with a scholarship from
+                    <a href="https://egfwd.com/" class="info-box__link"
+                      >edFWD.com</a
+                    >
+                  </h5>
+                </header>
+                <p class="info-box__text">
+                  We learn to manipulate and prepare data for analysis, and
+                  create visualizations for data exploration from a business
+                  perspective using Python, SQL and spreadsheets. We also get a
+                  bonus freelancing content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- History box 3  -->
+
+          <div class="info-box">
+            <h4 class="heading-4 u-mt-md u-mb-sm">Professional Experience</h4>
+            <div class="info-box__details">
+              <div class="info-box__box">
+                <header class="info-box__header">
+                  <div class="info-box__duration u-mb-sm">
+                    <svg class="info-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                    </svg>
+                    <span>Jan 2019 – Present </span>
+                  </div>
+                  <h5 class="heading-5">Junior Teaching/ Research Assistant</h5>
+                  <h5 class="heading-5 u-mb-sm">
+                    <a
+                      href="https://www.zewailcity.edu.eg/main/content.php?lang=en&alias=communications_and_information_engineering"
+                      class="info-box__link"
+                    >
+                      Communications and Information Engineering Program, Zewail
+                      City
+                    </a>
+                  </h5>
+                </header>
+                <p class="info-box__text">
+                  I was teaching Introduction to Programming and Computer
+                  Science courses in Python and MATLAB to younger colleagues. I
+                  currently work on a research project using deep learning to
+                  detect the epitope region of an antigen for enhanced vaccine
+                  designs (joined with my graduation project.)
+                </p>
+              </div>
+              <div class="info-box__box">
+                <header class="info-box__header">
+                  <div class="info-box__duration u-mb-sm">
+                    <svg class="info-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                    </svg>
+                    <span>Apr 2020 – Present </span>
+                  </div>
+                  <h5 class="heading-5">Instructor & Content Creator</h5>
+                  <h5 class="heading-5 u-mb-sm">
+                    <a
+                      href="https://www.youtube.com/channel/UCEflIOllb4EabJ1yHf7vM4Q/"
+                      class="info-box__link"
+                      >Code Arabi Channel</a
+                    >
+                    @youtube
+                  </h5>
+                </header>
+                <p class="info-box__text">
+                  I love to teach. I am passionate to give all what I learnt in
+                  simple, well-structured tutorials on my personal YouTube
+                  channel (ref link: to be sent) and Code Arabi. This is the job
+                  if they asked me to choose only one for life, I will choose
+                  it.
+                </p>
+              </div>
+              <div class="info-box__box">
+                <header class="info-box__header">
+                  <div class="info-box__duration u-mb-sm">
+                    <svg class="info-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                    </svg>
+                    <span>Jun 2019 – Dec 2019 </span>
+                  </div>
+                  <h5 class="heading-5">Project Management Intern</h5>
+                  <h5 class="heading-5 u-mb-sm">
+                    <a href="http://bedoeg.com/" class="info-box__link"
+                      >BEDO | Innovating Education
+                    </a>
+                  </h5>
+                </header>
+                <p class="info-box__text">
+                  I was helping in the management of the kids STEM educational
+                  division of the company: BEDO Planet Academy. I prepared
+                  science courses curricula in addition to a bootcamp in
+                  Artificial Intelligence for kids. I also gave Trainings of
+                  Trainers (ToTs) for people who taught the content to the
+                  children.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- History box 3 -->
+          <div class="info-box">
+            <h4 class="heading-4 u-mt-md u-mb-sm">
+              Entrepreneurial Experience
+            </h4>
+            <div class="info-box__details">
+              <div class="info-box__box">
+                <header class="info-box__header">
+                  <div class="info-box__duration u-mb-sm">
+                    <svg class="info-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                    </svg>
+                    <span> Sept 2020 – Present </span>
+                  </div>
+                  <h5 class="heading-5">
+                    <a href="https://www.codearabi.net" class="info-box__link"
+                      >Codearabi</a
+                    >
+                  </h5>
+                  <h5 class="heading-5 u-mb-sm">
+                    Founder, Managing Director & Course Instructor
+                  </h5>
+                </header>
+                <p class="info-box__text">
+                  Code Arabi is a startup focused on delivering high-quality
+                  programming education to Arabs for free through YouTube.
+                  Tutorials are prepared and taught on the international
+                  standards but with an Arabic tongue. The current focus of Code
+                  Arabi is to spread Artificial Intelligence education for all
+                  Arabs and then expand to other fields.
+                </p>
+              </div>
+              <div class="info-box__box">
+                <header class="info-box__header">
+                  <div class="info-box__duration u-mb-sm">
+                    <svg class="info-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                    </svg>
+                    <span>Feb 2020 – Present </span>
+                  </div>
+                  <h5 class="heading-5">
+                    <a href="#" class="info-box__link"> HealthInside</a>
+                  </h5>
+                  <h5 class="heading-5 u-mb-sm">
+                    Co-Founder, Chief Operations and Development & Data Engineer
+                  </h5>
+                </header>
+                <p class="info-box__text">
+                  HealthInside is an aspiring health-tech startup providing new
+                  solutions for the healthcare ecosystem using the Internet of
+                  Things. We design our all-in-one ecosystem to substitute the
+                  patient in any routine work and follow their medical status
+                  with tools and devices and help them maintain their health
+                  well in an easy way.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- History box 4 -->
+          <div class="info-box">
+            <h4 class="heading-4 u-mt-md u-mb-sm">Volunteer experience</h4>
+            <div class="info-box__details">
+              <div class="info-box__box">
+                <header class="info-box__header">
+                  <div class="info-box__duration u-mb-sm">
+                    <svg class="info-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                    </svg>
+                    <span> Aug 2020 - Oct 2020 </span>
+                  </div>
+                  <h5 class="heading-5">
+                    <a
+                      href="href: https://www.facebook.com/DSC.ZewailCity"
+                      class="info-box__link"
+                    >
+                      Developers Student Club – Zewail City</a
+                    >
+                  </h5>
+                  <h5 class="heading-5 u-mb-sm">
+                    Data Science and Engineering Team Lead
+                  </h5>
+                </header>
+                <p class="info-box__text">
+                  I prepared the study content and year roadmap for the team,
+                  and started the first condensed course of the year on Machine
+                  Learning using Google Cloud Platform.
+                </p>
+              </div>
+              <div class="info-box__box">
+                <header class="info-box__header">
+                  <div class="info-box__duration u-mb-sm">
+                    <svg class="info-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                    </svg>
+                    <span> Oct 2017 - Oct 2020 </span>
+                  </div>
+                  <h5 class="heading-5">
+                    <a href="http://ieeezc.org/" class="info-box__link">
+                      IEEE Zewail City Student Branch</a
+                    >
+                  </h5>
+                  <h5 class="heading-5 u-mb-sm">Senior Project Manager</h5>
+                </header>
+                <p class="info-box__text">
+                  I was managing the biggest projects of IEEE ZC SB. My match of
+                  retirement was
+                  <a href="#" class="info-box__link"
+                    >AppX ’20: Think, act, and change
+                  </a>
+                  mega event which hosted a technology summit and a hackathon in
+                  October 2020.
+                </p>
+              </div>
+              <div class="info-box__box">
+                <header class="info-box__header">
+                  <div class="info-box__duration u-mb-sm">
+                    <svg class="info-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                    </svg>
+                    <span> jan 2019 - Oct 2020 </span>
+                  </div>
+                  <h5 class="heading-5">
+                    <a
+                      href="href: https://www.facebook.com/PhysicsZC"
+                      class="info-box__link"
+                    >
+                      Zewail City Physics Club
+                    </a>
+                  </h5>
+                  <h5 class="heading-5 u-mb-sm">
+                    Head of Logistics and Financial Affairs
+                  </h5>
+                </header>
+                <p class="info-box__text">
+                  I was managing the event logistics and operations in addition
+                  to the financial stuff of the club. Although it is an academic
+                  club focusing on Physics topics, I enjoyed working with them
+                  so much!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Info grid ends  -->
+
+        <!-- History of the info section ends -->
+      </section>
+
+      <!-- Section who I am ends -->
+
+      <!-- Section what I do starts -->
+
+      <!-- <section class="deeds" id="deeds">
+        <h3 class="heading-3 u-mb-hg">What I do</h3>
+        <div class="deeds-container">
+          <div class="deed">
+            <svg class="deed__icon">
+              <use xlink:href="img/sprite.svg#icon-object-ungroup"></use>
+            </svg>
+            <h5 class="deed__name">Machine Learning</h5>
+            <p class="deed__description">
+              I am fascinated by the cutting-edge advancement that Machine
+              Learning made to almost every other field in science. I use
+              Machine Learning models, especially Deep Learning, to dive in the
+              biomedical data to help researchers derive conclusions faster. I
+              also work on some Computer Vision and Natural Language Processing
+              applications.
+            </p>
+          </div>
+          <div class="deed">
+            <svg class="deed__icon">
+              <use xlink:href="img/sprite.svg#icon-cloud"></use>
+            </svg>
+            <h5 class="deed__name">Cloud Engineering</h5>
+            <p class="deed__description">
+              I use Amazon Web Services and Google Cloud Platform to build
+              pipelines for data processing after developing the right tools for
+              the analysis. I mainly use Cloud Computing for mining Big Data as
+              per my Bioinformatics and Computational Biology background.
+            </p>
+          </div>
+          <div class="deed">
+            <svg class="deed__icon">
+              <use xlink:href="img/sprite.svg#icon-line-chart"></use>
+            </svg>
+            <h5 class="deed__name">Big Data Analytics</h5>
+            <p class="deed__description">
+              The huge data around us needs to be processed to extract useful
+              information from. Here comes Apache Hadoop Ecosystem. I worked
+              with Hadoop to mine some web streaming data to get some business
+              insights from. I mainly use Spark Machine Learning Library with
+              Biomedical Big Data to provide.
+            </p>
+          </div>
+          <div class="deed">
+            <svg class="deed__icon">
+              <use xlink:href="img/sprite.svg#icon-file-code-o"></use>
+            </svg>
+            <h5 class="deed__name">Backend Development</h5>
+            <p class="deed__description">
+              I learnt Django in my early Python learning days; however, I still
+              love to do my web projects with. I love to work on server-side
+              logic and do algorithms stuff to write a program that does a
+              specific task.
+            </p>
+          </div>
+          <div class="deed">
+            <svg class="deed__icon">
+              <use xlink:href="img/sprite.svg#icon-angellist"></use>
+            </svg>
+            <h5 class="deed__name">Entrepreneurship</h5>
+            <p class="deed__description">
+              I have had a long journey in management starting from student
+              activities in my university to professional experience in real big
+              projects. This got me interested in business and entrepreneurship,
+              so I learnt about Business Development & Management then Business
+              Intelligence and Analytics with some background in Economics. I
+              then got into the startup ecosystem in Egypt and knew about the
+              leading startup journeys. Currently, I am starting my own
+              business, Code Arabi, to teach people about the field that I am
+              fascinated with, which is Artificial Intelligence.
+            </p>
+          </div>
+          <div class="deed">
+            <svg class="deed__icon">
+              <use xlink:href="img/sprite.svg#icon-desktop"></use>
+            </svg>
+            <h5 class="deed__name">Teaching & Instructing</h5>
+            <p class="deed__description">
+              And here comes my real passion. I cannot stop saying how much I
+              love to teach people the new coding tips, and techniques that I
+              learnt or even giving them a whole course in some specific topic.
+              I see that AI will sit on the throne of technology and that is why
+              I am focusing on learning about it and its applications in
+              addition to teaching this to the public. I also love to learn
+              about the brand-new technologies in general and talk about them to
+              let another channel for people to know.
+            </p>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Section what I do ends -->
+
+      <!-- Section projects starts -->
+      <section class="projects" id="projects">
+        <h3 class="heading-3 u-mb-lg">Projects</h3>
+        <div class="card card--1">
+          <img src="img/coomingsoon.jpg" alt="cooming soon" class="card__img" />
+          <h4 class="card__heading">Cooming Soon</h4>
+          <p class="card__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, animi.
+            Ea voluptatem magni perspiciatis vel rem cupiditate architecto
+            necessitatibus, ipsum vero unde odio dolor maiores ratione accusamus
+            corporis! Voluptatibus, eligendi.
+          </p>
+        </div>
+      </section>
+      <!-- Section projects ends -->
+
+      <!-- contact section starts -->
+      <section class="contact" id="contact">
+        <h3 class="heading-3 u-mb-md">Get in touch</h3>
+        <h4 class="heading-4 u-mb-sm">You can hit me any time via:</h4>
+        <div class="contact-container">
+          <div class="contact-box contact-box--1">
+            <svg class="contact-box__icon">
+              <use xlink:href="img/sprite.svg#icon-comments"></use>
+            </svg>
+            <a
+              href="mailto:contact@SomaiaElbaradey.com"
+              class="contact-box__link"
+            >
+              contact@SomaiaElbaradey.com
+            </a>
+            <p class="contact-box__description">
+              If you want to start a friendly conversation with me.
+            </p>
+          </div>
+
+          <div class="contact-box contact-box--2">
+            <svg class="contact-box__icon">
+              <use xlink:href="img/sprite.svg#icon-briefcase"></use>
+            </svg>
+            <a href="business@SomaiaElbaradey.com" class="contact-box__link">
+              business@SomaiaElbaradey.com
+            </a>
+            <p class="contact-box__description">
+              if you are into work, bookings, and money.
+            </p>
+          </div>
+        </div>
+        <h4 class="heading-4 u-mt-md u-mb-sm">
+          or you may leave a message down bellow and I'll get back to you.
+        </h4>
+
+        <form class="contact-form">
+          <input
+            type="text"
+            placeholder="Name*"
+            class="contact-form__input contact-form__input--name"
+          />
+          <input
+            type="email"
+            placeholder="Email*"
+            class="contact-form__input contact-form__input--email"
+          />
+          <input
+            type="text"
+            placeholder="Subject*"
+            class="contact-form__input contact-form__input--subject"
+          />
+          <input
+            type="text"
+            placeholder="Your message..."
+            class="contact-form__input contact-form__input--message"
+          />
+          <button class="btn contact-form__btn">Send message</button>
+        </form>
+      </section>
+      <!-- contact section ends -->
+    </main>
+    <!-- main content end -->
+
+    <script src="js/functionality.js"></script>
+  </body>
+</html>
