@@ -1539,6 +1539,11 @@ body {
   animation-duration: 1.5s;
 }
 
+.info-skill-des{
+  /* color: #2196f3; */
+  /* padding-bottom: 1rem!important; */
+}
+
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
@@ -1556,3 +1561,4 @@ body {
     opacity: 1;
   }
 }
+
