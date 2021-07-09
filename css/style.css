@@ -289,7 +289,7 @@ body {
 .contact-form__input {
   -webkit-flex-basis: 47%;
   -ms-flex-preferred-size: 47%;
-  flex-basis: 47%;
+  flex-basis: 48.1%;
   margin: 1rem;
   font-family: inherit;
   font-size: 1.7rem;
@@ -1562,3 +1562,7 @@ body {
   }
 }
 
+.project{
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
