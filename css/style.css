@@ -5,9 +5,9 @@
   --text: #504e70;
   --border-dark: #d4d4e3;
   --border-light: #e8dfec;
+  --skin-color--2: #2196f3;
   --skin-color: #ec1839;
   --skin-color--1: #ec1839;
-  --skin-color--2: #2196f3;
   --skin-color--3: #fa5b0f;
   --skin-color--4: #ffb400;
   --skin-color--5: #72b626;
@@ -1562,7 +1562,12 @@ body {
   }
 }
 
-.project{
-  margin-left: 5rem;
-  margin-right: 5rem;
+.project {
+  position: relative;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+}
+
+.project-Head{
+  font-size: 29px;
 }

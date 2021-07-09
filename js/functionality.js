@@ -32,7 +32,7 @@ for (let i = 0; i < 5; i++) {
 ///////////////////////////////////////////////
 /// Dark Mode
 
-// variables
+// variablesskin
 
 //get the darkmode previous settings if exists
 let darkMode = localStorage.getItem("darkMode");
